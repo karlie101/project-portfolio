@@ -1,3 +1,16 @@
+:root {
+  --primary-color: #0096ff;
+  --secondary-color: #00d7ff;
+  --paragraph-color: #72ffff;
+  --accent-color: palegreen;
+  --gradient: linear-gradient(
+    90.1deg,
+    rgb(158, 252, 203) 16.8%,
+    rgb(63, 100, 255) 105.2%
+  );
+  --box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+}
+
 body {
   font-family: "Playfair Display", serif;
   background-image: url("../images/backgroud2.png");
@@ -31,13 +44,21 @@ h3 {
 }
 
 
-
-
-header {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6)),
-  url("../images/karlie11.png");
-
-  
+.skills {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
 }
+.skills i {
+  color: var(--branding-color);
+  font-size: 30px;
+  text-align: center;
+}
+
+.skills p {
+  font-size: 14px;
+
+
+
 
 
