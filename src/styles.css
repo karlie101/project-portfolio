@@ -1,6 +1,6 @@
 :root {
-  --primary-color: #0096ff;
-  --secondary-color: #00d7ff;
+  --primary-color: black;
+  --secondary-color: black;
   --paragraph-color: #72ffff;
   --accent-color: palegreen;
   --gradient: linear-gradient(
@@ -23,24 +23,79 @@ body {
   max-width: 800px;
 }
 
+
 h1,
 h2,
-h3 {
+h3
+h4
+h5
+h6 {
   text-align: center;
   margin: 0;
 }
 
 h1 {
+  font-weight: bold;
   font-size: 96px;
 }
 
 h2 {
-  font-size: 48px;
+  font-size: 36px;
+  font-weight: bold;
 }
 
 h3 {
   font-size: 24px;
-  opacity: 0.7;
+}
+
+p {
+  font-size: 24px;
+  font-weight: regular;
+  color: var(--secondary-color);
+}
+
+footer .email-link {
+  margin-top: 50px;
+}
+
+footer .email-link a {
+  text-decoration: none;
+  font-size: 24px;
+  font-family: var(--main-font-family);
+  color: var(--primary-color);
+}
+
+footer .email-link a:hover {
+  color: var(--third-color);
+}
+
+footer .social-media-links {
+  margin-top: 30px;
+  margin-bottom: 50px;
+}
+
+footer .social-media-links a {
+  text-decoration: none;
+  font-size: 24px;
+  font-family: var(--main-font-family);
+  color: var(--third-color);
+  background-color: var(--background-color);
+  margin: 0 24px;
+  padding: 10px 16px;
+  border-radius: 50%;
+}
+
+footer .social-media-links a:hover {
+  color: var(--background-color);
+  background-color: var(--third-color);
+}
+
+footer .credits p {
+  text-align: center;
+  font-size: 14px;
+  font-family: var(--main-font-family);
+  color: var(--secondary-color);
+
 }
 
 
@@ -57,6 +112,7 @@ h3 {
 
 .skills p {
   font-size: 14px;
+}
 
 
 
