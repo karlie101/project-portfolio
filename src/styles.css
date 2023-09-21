@@ -13,15 +13,67 @@
 
 body {
   font-family: "Playfair Display", serif;
+  text-align: center;
+  color: black;
+  background-color: #c9c9c9;
+}
+
+.introduction {
   background-image: url("../images/backgroud2.png");
   background-repeat: no-repeat;
   background-size: cover;
-  text-align: center;
   padding: 200px 0;
-  color: black;
   margin: 60px auto;
-  max-width: 800px;
 }
+
+.page-intro {
+  text-align: start;
+  padding: 100px 30px 50px 30px;
+}
+
+.projects {
+  padding: 0px 30px;
+}
+
+.page-intro h1 {
+  font-size: 48px;
+  line-height: 60px;
+}
+
+.page-intro h2 {
+  font-size: 18px;
+}
+
+.page-intro p {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 25px;
+}
+
+.page-intro h1 {
+  font-size: 48px;
+  line-height: 60px;
+}
+
+.page-intro h2 {
+  font-size: 18px;
+}
+
+.page-intro p {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 25px;
+}
+
+.page-intro i {
+  color: palevioletred;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 25px;
+  margin-right: 5px;
+}
+
+
 
 
 h1,
@@ -52,6 +104,45 @@ p {
   font-size: 24px;
   font-weight: regular;
   color: var(--secondary-color);
+}
+
+.navigation-links {
+  display: flex;
+  margin-top: 40px;
+  justify-content: center;
+}
+
+.navigation-links a {
+  margin: 20px;
+  border-radius: 4px;
+  padding: 20px 15px;
+  text-decoration: none;
+  text-transform: capitalize;
+}
+
+.contact-link {
+  background: var(--primary-color);
+  box-shadow: var(--box-shadow);
+  color: white;
+  border-radius: 4px;
+  padding: 20px 15px;
+  text-decoration: none;
+  text-transform: capitalize;
+}
+
+.about-link {
+  color: var(--primary-color);
+  border: 1px solid var(--primary-color);
+  border-radius: 4px;
+  padding: 20px 15px;
+  text-decoration: none;
+  text-transform: capitalize;
+}
+
+.homepage-link {
+  color: var(--primary-color);
+  text-align: center;
+  display: block;
 }
 
 footer .email-link {
@@ -114,7 +205,25 @@ footer .credits p {
   font-size: 14px;
 }
 
+.about-work-inquiry {
+  margin-top: 100px;
+  text-align: start;
+  background-image: url("../images/backgroud2.png");
+  color: black;
+  padding: 10px 30px;
+  border-radius: 20px;
+}
 
+.about-work-inquiry h1 {
+  font-size: 38px;
+}
+
+.about-work-inquiry p {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 30px;
+  text-align: start;
+}
 
 
 
