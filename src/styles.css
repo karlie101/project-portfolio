@@ -1,25 +1,56 @@
 :root {
+  --primary-background-image: url("../images/backgroud2.png");
+  --primary-font-family: "Playfair Display", serif;
+  --secondary-font-family:'Poppins', sans-serif;
   --primary-color: black;
-  --secondary-color: black;
-  --paragraph-color: #72ffff;
-  --accent-color: palegreen;
-  --gradient: linear-gradient(
-    90.1deg,
-    rgb(158, 252, 203) 16.8%,
-    rgb(63, 100, 255) 105.2%
-  );
+  --accent-color: palevioletred;
+  --secondary-accent-color: #c9c9c9;
+  --third-accent-color: #2f79aa;
+  --fourth-accent-color: #E5D283;
+  --fifth-accent-color: #213555;
+  --sixth-accent-color: #4F709C;
   --box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
 }
 
 body {
   font-family: "Playfair Display", serif;
   text-align: center;
-  color: black;
-  background-color: #c9c9c9;
+  color: var(--primary-color);
+  background-color: var(--secondary-accent-color);
 }
 
+.homepage-projects {
+  text-align: center;
+}
+
+.homepage-projects img {
+  border-radius: 10px;
+  padding: 5px;
+  transition: all 200ms ease-in-out;
+  background-image: var(--primary-background-image);
+}
+
+.homepage-projects img:hover {
+  transform: scale(1.1);
+  filter: grayscale(40%);
+  cursor: pointer;
+  /* filter: contrast(80%); */
+}
+
+.homepage-projects p {
+  font-size: 18px;
+  text-align: center;
+}
+
+.card-body {
+  background-image: var(--primary-background-image);
+}
+
+
+
+
 .introduction {
-  background-image: url("../images/backgroud2.png");
+  background-image: var(--primary-background-image);
   background-repeat: no-repeat;
   background-size: cover;
   padding: 200px 0;
@@ -48,6 +79,7 @@ body {
   font-weight: normal;
   font-size: 14px;
   line-height: 25px;
+  font-family: var(--secondary-font-family);
 }
 
 .page-intro h1 {
@@ -65,12 +97,34 @@ body {
   line-height: 25px;
 }
 
+.page-intro a {
+  text-align: center;
+}
+
+.page-intro h2 {
+  text-align: start;
+}
+
 .page-intro i {
-  color: palevioletred;
+  color: var(--accent-color);
   font-weight: normal;
   font-size: 18px;
   line-height: 25px;
   margin-right: 5px;
+}
+
+.page-intro img {
+  border-radius: 40px;
+  padding: 10px;
+  transition: all 200ms ease-in-out;
+  background-image: var(--primary-background-image);
+}
+
+.page-intro img:hover {
+  transform: scale(1.1);
+  filter: grayscale(40%);
+  cursor: pointer;
+  /* filter: contrast(80%); */
 }
 
 
@@ -121,9 +175,9 @@ p {
 }
 
 .contact-link {
-  background: var(--primary-color);
+  background: var(--third-accent-color);
   box-shadow: var(--box-shadow);
-  color: white;
+  color: var(--fourth-accent-color);
   border-radius: 4px;
   padding: 20px 15px;
   text-decoration: none;
@@ -131,18 +185,13 @@ p {
 }
 
 .about-link {
-  color: var(--primary-color);
-  border: 1px solid var(--primary-color);
+  color: var(--fifth-accent-color);
+  border: 1px solid var(--fifth-accent-color);
   border-radius: 4px;
   padding: 20px 15px;
   text-decoration: none;
   text-transform: capitalize;
-}
-
-.homepage-link {
-  color: var(--primary-color);
-  text-align: center;
-  display: block;
+  
 }
 
 footer .email-link {
@@ -152,12 +201,12 @@ footer .email-link {
 footer .email-link a {
   text-decoration: none;
   font-size: 24px;
-  font-family: var(--main-font-family);
-  color: var(--primary-color);
+  font-family: var(--secondary-font-family);
+  color: var(--third-accent-color);
 }
 
 footer .email-link a:hover {
-  color: var(--third-color);
+  color: var(--accent-color);
 }
 
 footer .social-media-links {
@@ -168,24 +217,25 @@ footer .social-media-links {
 footer .social-media-links a {
   text-decoration: none;
   font-size: 24px;
-  font-family: var(--main-font-family);
-  color: var(--third-color);
-  background-color: var(--background-color);
+  font-family: var(--primary-font-family);
+  color: var(--third-accent-color);
+  background-image: var(--primary-background-image);
   margin: 0 24px;
   padding: 10px 16px;
   border-radius: 50%;
 }
 
 footer .social-media-links a:hover {
-  color: var(--background-color);
-  background-color: var(--third-color);
+  color: var(--fourth-accent-color);
+  background-image: var(--primary-background-image);
+  
 }
 
 footer .credits p {
   text-align: center;
   font-size: 14px;
-  font-family: var(--main-font-family);
-  color: var(--secondary-color);
+  font-family: var(--primary-font-family);
+  color: var(--primary-color);
 
 }
 
@@ -196,7 +246,6 @@ footer .credits p {
   text-align: center;
 }
 .skills i {
-  color: var(--branding-color);
   font-size: 30px;
   text-align: center;
 }
@@ -208,22 +257,86 @@ footer .credits p {
 .about-work-inquiry {
   margin-top: 100px;
   text-align: start;
-  background-image: url("../images/backgroud2.png");
-  color: black;
+  background-image: var(--primary-background-image);
+  color: var(--primary-color);
   padding: 10px 30px;
   border-radius: 20px;
 }
 
 .about-work-inquiry h1 {
-  font-size: 38px;
+  font-size: 40px;
+  text-align: center;
 }
 
 .about-work-inquiry p {
   font-weight: normal;
-  font-size: 14px;
+  font-size: 20px;
   line-height: 30px;
-  text-align: start;
+  text-align: center;
 }
 
+.btn-branding {
+  background-color: var(--third-accent-color);
+  color: var(--fourth-accent-color);
+  font-size: 18px;
+}
 
+.btn-branding:hover {
+  background-color: var(--fourth-accent-color);
+  color: var(--sixth-accent-color);
+}
 
+.btn-projects-branding {
+  background-color: var(--third-accent-color);
+  color: var(--fourth-accent-color);
+}
+
+.btn-projects-branding:hover {
+  background-color: var(--fourth-accent-color);
+  color: var(--sixth-accent-color);
+}
+
+.projects-intro {
+  font-size: 22px;
+  text-align: center;
+  font-weight: bold;
+}
+
+@media (max-width: 900px) {
+  h1 {
+    font-size: 48px;
+  }
+
+  h2 {
+    font-size: 28px;
+    line-height: 1.5;
+  }
+
+  .btn-projects-branding {
+    font-size: 18px;
+  }
+
+  .about-intro {
+    text-align: center;
+  }
+
+  .about-intro h1 {
+    line-height: 50px;
+    font-size: 48px;
+  }
+
+  .about-work-inquiry {
+    text-align: center;
+  }
+
+  .row-order {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+  .row-order :nth-child(1) {
+    order: 2;
+  }
+  .row-order :nth-child(2) {
+    order: 1;
+  }
+}
