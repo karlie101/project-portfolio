@@ -46,9 +46,6 @@ body {
   background-image: var(--primary-background-image);
 }
 
-
-
-
 .introduction {
   background-image: var(--primary-background-image);
   background-repeat: no-repeat;
@@ -127,9 +124,6 @@ body {
   /* filter: contrast(80%); */
 }
 
-
-
-
 h1,
 h2,
 h3
@@ -184,6 +178,16 @@ p {
   text-transform: capitalize;
 }
 
+.contact-link:hover {
+  background-image: var(--primary-background-image);
+  color: var(--fifth-accent-color);
+  border: 1px solid var(--fifth-accent-color);
+  border-radius: 4px;
+  padding: 20px 15px;
+  text-decoration: none;
+  text-transform: capitalize;
+}
+
 .about-link {
   color: var(--fifth-accent-color);
   border: 1px solid var(--fifth-accent-color);
@@ -191,7 +195,16 @@ p {
   padding: 20px 15px;
   text-decoration: none;
   text-transform: capitalize;
-  
+}
+
+.about-link:hover {
+  background: var(--third-accent-color);
+  box-shadow: var(--box-shadow);
+  color: var(--fourth-accent-color);
+  border-radius: 4px;
+  padding: 20px 15px;
+  text-decoration: none;
+  text-transform: capitalize;
 }
 
 footer .email-link {
@@ -201,7 +214,7 @@ footer .email-link {
 footer .email-link a {
   text-decoration: none;
   font-size: 24px;
-  font-family: var(--secondary-font-family);
+  font-family: var(--primary-font-family);
   color: var(--third-accent-color);
 }
 
@@ -236,9 +249,7 @@ footer .credits p {
   font-size: 14px;
   font-family: var(--primary-font-family);
   color: var(--primary-color);
-
 }
-
 
 .skills {
   display: flex;
